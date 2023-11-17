@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrazione app music Streaming</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #f7635e;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			height: 100vh;
+			align-items: center;
+			font-family: 'Lato', sans-serif;
+		}
+
+		img {
+			width: 100px;
+		}
+
+		.main {
+			max-width: 400px;
+			text-align: center;
+			background-color: #fff;
+			padding: 30px 15px 15px 15px;
+			border-radius: 2em;
+		}
+
+		form div {
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="number"] {
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #f7635e;
+			border-radius: 5px;
+		}
+
+		.checkbox {
+			display: inline-block;
+		}
+
+		.send {
+			margin-top: 15px;
+		}
+
+		.send button {
+			background-color: #f7635e;
+			color: #fff;
+			padding: 15px;
+			border: none;
+			border-radius: 0.5rem;
+			cursor: pointer;
+		}
+
+		.send button:hover {
+			background-color: #aa4440;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<img src="app-logo.png" alt="Logo Streaming Music">
+		<h1>Registrati</h1>
+		<form onsubmit="alert('Registrazione inviata!')">
+			<div>
+				<input type="text" name="name" placeholder="Nome">
+			</div>
+			<div>
+				<input type="text" name="lastname" placeholder="Cognome">
+			</div>
+			<div>
+				<input type="email" name="email" placeholder="E-mail">
+			</div>
+			<div>
+				<input type="password" name="password" placeholder="Password">
+			</div>
+			<div>
+				<input type="number" name="phone" placeholder="Telefono">
+			</div>
+			<div>
+				<p><b>Preferenze musicali</b></p>
+
+				<div class="checkbox"><input type="checkbox" name="preferences" value="Pop" id="pop"> <label
+						for="pop">Pop</label></div>
+				<div class="checkbox"><input type="checkbox" name="preferences" value="Rap e Hip Hop" id="rap"> <label
+						for="rap">Rap e Hip Hop</label></div>
+				<div class="checkbox"><input type="checkbox" name="preferences" value="Rock" id="Rock"> <label
+						for="Rock">Rock</label></div>
+				<div class="checkbox"><input type="checkbox" name="preferences" value="Classica" id="classica"> <label
+						for="classica">Classica</label></div>
+				<div class="checkbox">
+					<input type="checkbox" name="preferences" value="Elettronica" id="elettronica"> <label
+						for="elettronica">Elettronica</label>
+				</div>
+			</div>
+			<iput>
+				<b>Accetti i temini e condizioni?</b> <input type="radio" name="terms" id="terms-yes"> <label
+					for="terms-yes">Sì</label>
+				<input type="radio" name="terms" id="terms-no"> <label for="terms-yes">No</label>
+				<div class="send">
+					<button type="submit">Invia registrazione</button>
+				</div>
+	</div>
+	</form>
+	</div>
+</body>
+
+</html>
