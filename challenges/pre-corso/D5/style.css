@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	display: flex;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main {
+	width: 100%;
+}
+
+.sidebar {
+	width: 117px;
+	position: sticky;
+	align-self: flex-start;
+	top: 0;
+	background: #fff;
+	height: 100vh;
+}
+
+.topbar {
+	height: 4.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	background: #fff;
+	top: 0;
+}
+
+.content {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.icon ion-icon {
+	font-size: 2em;
+}
+
+.icon p {
+	margin: 0;
+}
+
+.sidebar .icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0.5em;
+	cursor: pointer;
+	height: 8vh;
+	width: 4.5em;
+	margin: 50px auto;
+	border-radius: 1em;
+}
+
+.sidebar .icon:hover {
+	background-color: #f0f0f0;
+}
+
+.sidebar .icon:first-of-type {
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	margin: 1em auto;
+	border-radius: 50%;
+}
+
+.logo {
+	height: 50%;
+}
+
+.search-wrapper {
+	display: flex;
+	height: 40px;
+	width: 30%;
+}
+
+.search-wrapper input {
+	width: 100%;
+	padding: 0 1em;
+	border-radius: 10em 0 0 10em;
+	border-right-width: 1px;
+	min-width: 131px;
+}
+
+.icons-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.top-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8em;
+	margin: 0 0.5em;
+	cursor: pointer;
+	padding: 0;
+	min-width: 40px;
+	min-height: 40px;
+	border-radius: 50%;
+}
+
+.top-icon:hover {
+	background-color: #f0f0f0;
+}
+.mic-icon:hover {
+	background-color: #d3d3d3;
+}
+
+.mic-icon {
+	background-color: #f0f0f0;
+}
+
+.search-btn {
+	padding: 0 0.8em;
+	font-size: 1.3em;
+	display: flex;
+	align-items: center;
+	border-radius: 0 10em 10em 0;
+	border-left: 0;
+	cursor: pointer;
+	background-color: #f0f0f0;
+	margin-right: 0.8em;
+}
+
+.search-btn:hover {
+	background-color: #d3d3d3;
+}
+
+.video-wrapper {
+	margin-bottom: 2em;
+	width: 30%;
+	min-width: 423px;
+}
+
+.video-info {
+	display: flex;
+}
+
+.video-tile {
+	padding-left: 1em;
+}
+
+.video-tile h2,
+.video-tile p {
+	margin: 0;
+}
+
+.account-icon {
+	max-width: 60px;
+}
+
+.account-icon img {
+	width: 100%;
+}
+
+.video-thumb img {
+	width: 100%;
+	margin-bottom: 1em;
+}
